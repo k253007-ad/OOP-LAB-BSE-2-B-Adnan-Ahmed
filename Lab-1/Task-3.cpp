@@ -10,12 +10,12 @@ void findPrimesInRange(int num1, int num2){
         cout << num1 << " and " << num2 << " are:\n";
         for( int i = num1; i < num2; i++){
             bool prime = true;
-            for( int j = 2; j < i; j++){
+            for( int j = ; j < i; j++){
                 if( (i%j) == 0) prime = false;
             }
             if(prime == true) cout << i << " ";
         }
-    
+    }
 }
 
 int main() {
