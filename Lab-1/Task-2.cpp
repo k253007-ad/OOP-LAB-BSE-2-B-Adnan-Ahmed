@@ -7,13 +7,27 @@ int main() {
     cout << "Enter the Number of Rows: ";
     cin >> rows;
     
-    for( int i = 0; i < (rows*2)-1; i++){
-        for( int j = i; j <= rows; j++){
+    for( int i = 0; i < rows; i++){
+        for( int j = i+1; j < rows; j++){
             cout << " ";
         }
         for( int j = 0; j <= i*2; j++){
-            cout << char1 + j;
+            char char2 = char1 + j;
+            cout << char2;
         }
+        cout << endl;
+    }
+    for( int i = (rows - 2); i >= 0; i--){
+        
+        for( int j = i+1; j < rows; j++){
+            cout << " ";
+        }
+        for( int j = i*2; j >= 0; j--){
+            char char2 = (char1 + i*2 - j);
+            cout << char2;
+        }
+        
+        cout << endl;
     }
     
     
